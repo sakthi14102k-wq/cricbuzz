@@ -1,5 +1,3 @@
-# pages/crud_operations.py - Perform CRUD on player stats
-
 import streamlit as st
 import pandas as pd
 import mysql.connector as my
