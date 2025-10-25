@@ -1,5 +1,3 @@
-# pages/live_matches.py - Displays live match data from Cricbuzz API
-
 import streamlit as st
 import pandas as pd
 import requests
