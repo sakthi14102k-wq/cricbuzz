@@ -1,8 +1,6 @@
 import streamlit as st
 
 def show():
-    """Display the home page with project information"""
-    
     # Main title and description
     st.markdown("## Welcome to Cricbuzz LiveStats Dashboard!🏏")
     
@@ -116,3 +114,4 @@ def show():
                      Domain: **Sports Analytics** 🏏
 
                     """)
+
