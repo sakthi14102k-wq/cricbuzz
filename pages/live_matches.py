@@ -62,7 +62,7 @@ def show():
 
         innings_data = {}
         for idx, i in enumerate(data.get("scorecard", [])):
-            runs = i.get("total") or i.get("runs") or i.get("score") or i.get("runsScored") or None
+            runs = i.get("runs") or i.get("score") or None
             wickets = i.get("wickets")
             if runs is None or runs == "":
                 runs = "0"
@@ -72,9 +72,7 @@ def show():
 
             score_string = f"{runs}/{wickets}"
 
-            innings_name = i.get("inningsName")
-            if not innings_name or innings_name.lower() == "none":
-                innings_name = f"Innings {s_innings if (s_innings := i.get('inningsId')) else idx+1}"
+            innings_name = f"Innings {s_innings if (s_innings := i.get('inningsId')) else idx+1}"
 
             batting_scorecard = []
             bowling_scorecard = []
